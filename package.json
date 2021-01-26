@@ -1,0 +1,27 @@
+{
+  "name": "@achouffe/npx-card",
+  "version": "0.1.0",
+  "description": "my npx card",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Achouffe666/npx-card.git"
+  },
+  "author": "achouffe",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Achouffe666/npx-card/issues"
+  },
+  "homepage": "https://github.com/Achouffe666/npx-card#readme",
+  "bin": {
+    "achouffe-card": "./index.js"
+  },
+  "dependencies": {
+    "boxen": "^5.0.0",
+    "chalk": "^4.1.0",
+    "terminal-link": "^2.1.1"
+  }
+}
