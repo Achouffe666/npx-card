@@ -1,6 +1,6 @@
 {
   "name": "@achouffe/npx-card",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "description": "my npx card",
   "main": "index.js",
   "scripts": {
