@@ -1,6 +1,6 @@
 {
   "name": "@achouffe/npx-card",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "my npx card",
   "main": "index.js",
   "scripts": {
@@ -17,7 +17,7 @@
   },
   "homepage": "https://github.com/Achouffe666/npx-card#readme",
   "bin": {
-    "achouffe-card": "./index.js"
+    "achouffe-card": "index.js"
   },
   "dependencies": {
     "boxen": "^5.0.0",
