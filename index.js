@@ -2,6 +2,7 @@
 const boxen = require('boxen');
 const chalk = require('chalk');
 const terminalLink = require('terminal-link');
+
 const NEWLINE = "\n";
 const EMPTYLINE = "";
 
@@ -17,17 +18,19 @@ const data = {
     alias: chalk.yellow.bold("             @Achouffe"),
     age: `${chalk.green(myAge)} Years old`,
     country: chalk.black.bold("          BE") + chalk.yellow.bold('LG') + chalk.red.bold('IUM'),
-    github: `MY GITHUB =>      ${terminalLink('Github', "https://github.com/Achouffe666")}`,
-    linkedin: `MY LINKEDIN =>    ${terminalLink('Linkedin', "https://www.linkedin.com/in/austin-benard/")}` 
+    github: `MY GITHUB      =>    ${terminalLink('Github', "https://github.com/Achouffe666")}`,
+    linkedin: `MY LINKEDIN    =>    ${terminalLink('Linkedin', "https://www.linkedin.com/in/austin-benard/")}` 
 };
+
+
 
 
 console.log(boxen(
     [data.title,
         data.alias,
+        `${data.country}`,
         EMPTYLINE,
      `${data.age}`,
-     `${data.country}`,
      EMPTYLINE,
      `${data.github}`,
      `${data.linkedin}`
