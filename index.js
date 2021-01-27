@@ -8,10 +8,18 @@ const NEWLINE = "\n";
 const EMPTYLINE = "";
 
 let today = new Date();
-let actualYear = today.getFullYear();
+let y = today.getFullYear();
+let m = today.getMonth();
+let d = today.getDate();
+let date = new Date(y,m,d);
+let birthdate = new Date(`${y}-06-10`);
+let i = 1;
 
-const birthday = 1996+1;
-const myAge = actualYear - birthday;
+// comparing date and borthday to have exact age on the card
+date > birthdate ? i = 0 : i = 1 ;
+
+const birthday = 1996+i;
+const myAge = y - birthday;
 
 const alias = CFonts.render('Achouffe!',{
     font: '3d',
